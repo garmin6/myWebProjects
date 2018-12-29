@@ -1,0 +1,158 @@
+/* General setup */
+@font-face {
+    font-family: 'timelessregular';
+    src: url('fonts/timeless-webfont.woff2') format('woff2'),
+         url('fonts/timeless-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'timelessbold';
+    src: url('fonts/timeless-bold-webfont.woff2') format('woff2'),
+         url('fonts/timeless-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'american_captainregular';
+    src: url('fonts/american_captain-webfont.woff2') format('woff2'),
+         url('fonts/american_captain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: consolas;	
+    background-color:#eff0fe;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 800px;
+  max-width: 1200px;
+}
+
+h1 {
+	font-size:3rem;
+	text-align:center;
+	letter-spacing:4px;
+	font-family:'american_captainregular';
+}
+
+h2 {
+	font-size:2.4rem;
+	font-family:'timelessbold';	
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+section p {
+	text-indent: 2rem;
+	font-size:1.4rem;
+	font-family:consolas;
+	font-weight:bold;
+}
+
+section ul li, section ol li{
+	line-height:1.6;
+	font-size:1.4rem;
+}
+section ul li{
+	list-style-type: square;
+}
+
+aside a{
+	line-height:1.8;
+	list-style-type: square;
+	font-size:1.6rem;
+	color:#aa6666;
+	text-decoration:none;
+}
+
+aside p {
+	color:#aa6666;
+	text-align:right;
+	
+}
+/* Layout */
+ol {
+	list-style-type:lower-latin;
+	margin-left:1.5rem;
+}
+
+section {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+aside p::before{
+	content:'-> ';
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+nav li {	
+	margin:2rem 0;
+	line-height:2.5rem;
+	list-style-type: none;
+	color:black;
+	text-align:center;
+	border:2px solid #b77;
+	border-radius: 6px;
+}
+
+nav li:hover {	
+	background-color:#d0b0b0;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+nav a:hover{
+	color:white;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 1rem;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
